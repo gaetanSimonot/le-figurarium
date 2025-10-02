@@ -2,3 +2,4 @@
 nul
 .next/
 node_modules/
+out/
