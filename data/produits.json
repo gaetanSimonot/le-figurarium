@@ -1,0 +1,112 @@
+{
+  "packs": [
+    {
+      "id": "pack-debutant",
+      "nom": "Pack Débutant",
+      "type": "starter",
+      "prix": "899€",
+      "description": "Tout pour commencer l'impression 3D résine avec 36 STL premium",
+      "contenu": [
+        "Imprimante 3D résine Mars 4 Ultra",
+        "1L de résine premium",
+        "36 STL exclusifs (3/mois pendant 12 mois)",
+        "Guide complet d'impression",
+        "Support technique prioritaire"
+      ],
+      "image": "/images/pack-debutant.jpg",
+      "stripeLink": "#"
+    },
+    {
+      "id": "pack-halloween",
+      "nom": "Pack Halloween",
+      "type": "thematique",
+      "prix": "29€",
+      "description": "Collection de 15 figurines terrifiantes pour Halloween",
+      "contenu": [
+        "15 STL thématiques Halloween",
+        "Socles personnalisés",
+        "Fichiers pré-supportés"
+      ],
+      "image": "/images/pack-halloween.jpg",
+      "gumroadLink": "https://gumroad.com/l/halloween-pack"
+    },
+    {
+      "id": "pack-chibi",
+      "nom": "Pack Chibi",
+      "type": "thematique",
+      "prix": "24€",
+      "description": "Collection adorable de 12 personnages chibi",
+      "contenu": [
+        "12 STL style chibi",
+        "Expressions variées",
+        "Fichiers pré-supportés"
+      ],
+      "image": "/images/pack-chibi.jpg",
+      "gumroadLink": "https://gumroad.com/l/chibi-pack"
+    },
+    {
+      "id": "pack-noel",
+      "nom": "Pack Noël",
+      "type": "thematique",
+      "prix": "34€",
+      "description": "Collection festive de 18 figurines pour les fêtes",
+      "contenu": [
+        "18 STL thématiques Noël",
+        "Décors et accessoires",
+        "Fichiers pré-supportés"
+      ],
+      "image": "/images/pack-noel.jpg",
+      "gumroadLink": "https://gumroad.com/l/noel-pack"
+    }
+  ],
+  "figurines": [
+    {
+      "id": "alkemia-001",
+      "createur": "Alkemia",
+      "nom": "Archimage Élémentaire",
+      "description": "Puissant mage maîtrisant les quatre éléments",
+      "image": "/createur/alkemia/archimage.jpg",
+      "gumroadLink": "https://gumroad.com/l/archimage"
+    },
+    {
+      "id": "alkemia-002",
+      "createur": "Alkemia",
+      "nom": "Guerrière Céleste",
+      "description": "Combattante divine aux ailes lumineuses",
+      "image": "/createur/alkemia/guerriere-celeste.jpg",
+      "gumroadLink": "https://gumroad.com/l/guerriere-celeste"
+    },
+    {
+      "id": "alkemia-003",
+      "createur": "Alkemia",
+      "nom": "Druide des Forêts",
+      "description": "Gardien ancestral de la nature sauvage",
+      "image": "/createur/alkemia/druide.jpg",
+      "gumroadLink": "https://gumroad.com/l/druide"
+    },
+    {
+      "id": "alkemia-004",
+      "createur": "Alkemia",
+      "nom": "Nécromancien Obscur",
+      "description": "Maître des arts sombres et des morts-vivants",
+      "image": "/createur/alkemia/necromancien.jpg",
+      "gumroadLink": "https://gumroad.com/l/necromancien"
+    },
+    {
+      "id": "alkemia-005",
+      "createur": "Alkemia",
+      "nom": "Paladin Dragon",
+      "description": "Chevalier-dragon au service de la justice",
+      "image": "/createur/alkemia/paladin-dragon.jpg",
+      "gumroadLink": "https://gumroad.com/l/paladin-dragon"
+    },
+    {
+      "id": "alkemia-006",
+      "createur": "Alkemia",
+      "nom": "Sorcière des Marais",
+      "description": "Enchanteresse mystérieuse des terres humides",
+      "image": "/createur/alkemia/sorciere-marais.jpg",
+      "gumroadLink": "https://gumroad.com/l/sorciere-marais"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+import { MetadataRoute } from 'next';
+
+export const dynamic = 'force-static';
+
+export default function manifest(): MetadataRoute.Manifest {
+  return {
+    name: 'Le Figurarium - Fichiers STL Premium',
+    short_name: 'Le Figurarium',
+    description: 'Boutique de fichiers STL premium pour impression 3D résine',
+    start_url: '/',
+    display: 'standalone',
+    background_color: '#ffffff',
+    theme_color: '#6366f1',
+    icons: [
+      {
+        src: '/icon-192.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+      {
+        src: '/icon-512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+      {
+        src: '/icon-192.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'any',
+      },
+      {
+        src: '/icon-512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'any',
+      },
+    ],
+    categories: ['shopping', 'lifestyle', 'entertainment'],
+    lang: 'fr-FR',
+    dir: 'ltr',
+    orientation: 'portrait-primary',
+  };
+}

@@ -1,0 +1,157 @@
+{
+  "figurines": [
+    {
+      "id": "alkemia-art-alien",
+      "createur": "ALKEMIA ART",
+      "nom": "alien",
+      "description": "Figurine alien par ALKEMIA ART",
+      "categorie": "Sci-Fi",
+      "images": [
+        "/createur/ALKEMIA ART/alien/ALIEN (1).png",
+        "/createur/ALKEMIA ART/alien/Alien_Eclate (1).png",
+        "/createur/ALKEMIA ART/alien/Alien_tech (1).png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/alien/ALIEN (1).png",
+      "gumroadLink": "https://gumroad.com/l/alien"
+    },
+    {
+      "id": "alkemia-art-goku",
+      "createur": "ALKEMIA ART",
+      "nom": "GOKU",
+      "description": "Figurine GOKU par ALKEMIA ART",
+      "categorie": "Anime",
+      "images": [
+        "/createur/ALKEMIA ART/GOKU/RENDER.bip.234.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/GOKU/RENDER.bip.234.png",
+      "gumroadLink": "https://gumroad.com/l/goku"
+    },
+    {
+      "id": "alkemia-art-goldorak",
+      "createur": "ALKEMIA ART",
+      "nom": "goldorak",
+      "description": "Figurine goldorak par ALKEMIA ART",
+      "categorie": "Sci-Fi",
+      "images": [
+        "/createur/ALKEMIA ART/goldorak/rendergoldorak.bip.246.png",
+        "/createur/ALKEMIA ART/goldorak/rendergoldorak.bip.247.png",
+        "/createur/ALKEMIA ART/goldorak/rendergoldorak.bip.248.png",
+        "/createur/ALKEMIA ART/goldorak/rendergoldorak.bip.249.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/goldorak/rendergoldorak.bip.246.png",
+      "gumroadLink": "https://gumroad.com/l/goldorak"
+    },
+    {
+      "id": "alkemia-art-hellboy",
+      "createur": "ALKEMIA ART",
+      "nom": "HellBoy",
+      "description": "Figurine HellBoy par ALKEMIA ART",
+      "categorie": "Comics",
+      "images": [
+        "/createur/ALKEMIA ART/HellBoy/hell2.jpeg",
+        "/createur/ALKEMIA ART/HellBoy/HELL_vertical.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/HellBoy/hell2.jpeg",
+      "gumroadLink": "https://gumroad.com/l/hellboy"
+    },
+    {
+      "id": "alkemia-art-kafka",
+      "createur": "ALKEMIA ART",
+      "nom": "KAFKA",
+      "description": "Figurine KAFKA par ALKEMIA ART",
+      "categorie": "Sci-Fi",
+      "images": [
+        "/createur/ALKEMIA ART/KAFKA/render.141.png",
+        "/createur/ALKEMIA ART/KAFKA/render.143.png",
+        "/createur/ALKEMIA ART/KAFKA/render.144.png",
+        "/createur/ALKEMIA ART/KAFKA/render.145.png",
+        "/createur/ALKEMIA ART/KAFKA/vignette.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/KAFKA/vignette.png",
+      "gumroadLink": "https://gumroad.com/l/kafka"
+    },
+    {
+      "id": "alkemia-art-lucci",
+      "createur": "ALKEMIA ART",
+      "nom": "LUCCI",
+      "description": "Figurine LUCCI par ALKEMIA ART",
+      "categorie": "Anime",
+      "images": [
+        "/createur/ALKEMIA ART/LUCCI/01.png",
+        "/createur/ALKEMIA ART/LUCCI/02.png",
+        "/createur/ALKEMIA ART/LUCCI/03.png",
+        "/createur/ALKEMIA ART/LUCCI/radhan.bip.156.png",
+        "/createur/ALKEMIA ART/LUCCI/radhan.bip.157.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/LUCCI/01.png",
+      "gumroadLink": "https://gumroad.com/l/lucci"
+    },
+    {
+      "id": "alkemia-art-mandalo",
+      "createur": "ALKEMIA ART",
+      "nom": "MANDALO",
+      "description": "Figurine MANDALO par ALKEMIA ART",
+      "categorie": "Anime",
+      "images": [
+        "/createur/ALKEMIA ART/MANDALO/01.134.png",
+        "/createur/ALKEMIA ART/MANDALO/01.135.png",
+        "/createur/ALKEMIA ART/MANDALO/01.136.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/MANDALO/01.134.png",
+      "gumroadLink": "https://gumroad.com/l/mandalo"
+    },
+    {
+      "id": "alkemia-art-peintresse_clairobscur",
+      "createur": "ALKEMIA ART",
+      "nom": "Peintresse_clairObscur",
+      "description": "Figurine Peintresse_clairObscur par ALKEMIA ART",
+      "categorie": "Fantasy",
+      "images": [
+        "/createur/ALKEMIA ART/Peintresse_clairObscur/ounnnno.png",
+        "/createur/ALKEMIA ART/Peintresse_clairObscur/ounnno.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/Peintresse_clairObscur/ounnnno.png",
+      "gumroadLink": "https://gumroad.com/l/peintresse_clairobscur"
+    },
+    {
+      "id": "alkemia-art-rengoku",
+      "createur": "ALKEMIA ART",
+      "nom": "rengoku",
+      "description": "Figurine rengoku par ALKEMIA ART",
+      "categorie": "Anime",
+      "images": [
+        "/createur/ALKEMIA ART/rengoku/RENG01.png",
+        "/createur/ALKEMIA ART/rengoku/RENG02.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/rengoku/RENG01.png",
+      "gumroadLink": "https://gumroad.com/l/rengoku"
+    },
+    {
+      "id": "alkemia-art-zeus",
+      "createur": "ALKEMIA ART",
+      "nom": "ZEUS",
+      "description": "Figurine ZEUS par ALKEMIA ART",
+      "categorie": "Mythologie",
+      "images": [
+        "/createur/ALKEMIA ART/ZEUS/render02.149.png",
+        "/createur/ALKEMIA ART/ZEUS/render02.153.png",
+        "/createur/ALKEMIA ART/ZEUS/render02.154.png",
+        "/createur/ALKEMIA ART/ZEUS/render02.155.png"
+      ],
+      "mainImage": "/createur/ALKEMIA ART/ZEUS/render02.149.png",
+      "gumroadLink": "https://gumroad.com/l/zeus"
+    },
+    {
+      "id": "gruumpy-dragon",
+      "createur": "GRUUMPY",
+      "nom": "dragon",
+      "description": "Figurine dragon par GRUUMPY",
+      "categorie": "Mythologie",
+      "images": [
+        "/createur/GRUUMPY/dragon/drago.png"
+      ],
+      "mainImage": "/createur/GRUUMPY/dragon/drago.png",
+      "gumroadLink": "https://gumroad.com/l/dragon"
+    }
+  ]
+}
