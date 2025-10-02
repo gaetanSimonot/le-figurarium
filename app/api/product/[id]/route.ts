@@ -1,5 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
 
+interface GumroadProduct {
+  id: string
+  name: string
+  description: string
+  price: number
+  formatted_price: string
+  short_url: string
+  thumbnail_url: string | null
+  preview_url?: string
+  cover_url?: string
+}
+
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -32,7 +44,7 @@ export async function GET(
     }
 
     const data = await response.json()
-    const product = data.products?.find((p: any) => p.id === id)
+    const product = data.products?.find((p: GumroadProduct) => p.id === id)
 
     if (!product) {
       return NextResponse.json(
