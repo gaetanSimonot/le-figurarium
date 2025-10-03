@@ -26,7 +26,7 @@ interface CacheEntry {
 
 // In-memory cache
 let productsCache: CacheEntry | null = null
-const CACHE_DURATION = 60 * 60 * 1000 // 1 hour in milliseconds
+const CACHE_DURATION = 5 * 60 * 1000 // 5 minutes in milliseconds
 
 export async function GET() {
   try {
@@ -36,7 +36,7 @@ export async function GET() {
       console.log('[API /products] Returning cached data')
       return NextResponse.json(productsCache.data, {
         headers: {
-          'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200'
+          'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600'
         }
       })
     }
@@ -85,7 +85,7 @@ export async function GET() {
 
     return NextResponse.json(data.products, {
       headers: {
-        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200'
+        'Cache-Control': 'public, s-maxage=300, stale-while-revalidate=600'
       }
     })
   } catch (error) {
