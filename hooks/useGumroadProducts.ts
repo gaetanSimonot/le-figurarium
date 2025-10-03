@@ -20,26 +20,17 @@ export function useGumroadProducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        console.log('[useGumroadProducts] Fetching products from Gumroad API')
+        console.log('[useGumroadProducts] Fetching products from API')
 
-        const token = process.env.NEXT_PUBLIC_GUMROAD_TOKEN
-        if (!token) {
-          throw new Error('Token Gumroad manquant')
-        }
-
-        const response = await fetch('https://api.gumroad.com/v2/products', {
-          headers: {
-            'Authorization': `Bearer ${token}`
-          }
-        })
+        const response = await fetch('/api/products')
 
         if (!response.ok) {
           throw new Error(`Erreur API: ${response.status}`)
         }
 
         const data = await response.json()
-        console.log('[useGumroadProducts] Products loaded:', data.products?.length)
-        setProducts(data.products || [])
+        console.log('[useGumroadProducts] Products loaded:', data.length)
+        setProducts(data)
       } catch (err) {
         console.error('[useGumroadProducts] Erreur:', err)
         setError(err instanceof Error ? err.message : 'Erreur de chargement')

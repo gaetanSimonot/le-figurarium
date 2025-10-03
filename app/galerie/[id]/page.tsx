@@ -25,7 +25,7 @@ type TabType = 'description' | 'features' | 'printing'
 
 export default function ProductPage() {
   const params = useParams()
-  const productId = params.id as string
+  const productId = decodeURIComponent(params.id as string)
 
   const [product, setProduct] = useState<GumroadProduct | null>(null)
   const [loading, setLoading] = useState(true)
