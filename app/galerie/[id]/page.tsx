@@ -37,20 +37,36 @@ export default function ProductPage() {
       try {
         console.log('[ProductPage] Fetching product:', productId)
 
-        const response = await fetch(`/api/product/${productId}`)
+        const token = process.env.NEXT_PUBLIC_GUMROAD_TOKEN
+        if (!token) {
+          throw new Error('Token Gumroad manquant')
+        }
+
+        const response = await fetch('https://api.gumroad.com/v2/products', {
+          headers: {
+            'Authorization': `Bearer ${token}`
+          }
+        })
 
         if (!response.ok) {
-          if (response.status === 404) {
-            setProduct(null)
-            setLoading(false)
-            return
-          }
           throw new Error(`Erreur API: ${response.status}`)
         }
 
-        const data = await response.json()
-        console.log('[ProductPage] Product loaded:', data.name)
-        setProduct(data)
+        interface GumroadApiResponse {
+          products: GumroadProduct[]
+        }
+
+        const data: GumroadApiResponse = await response.json()
+        const foundProduct = data.products?.find((p: GumroadProduct) => p.id === productId)
+
+        if (!foundProduct) {
+          setProduct(null)
+          setLoading(false)
+          return
+        }
+
+        console.log('[ProductPage] Product loaded:', foundProduct.name)
+        setProduct(foundProduct)
       } catch (err) {
         console.error('[ProductPage] Erreur:', err)
         setError(err instanceof Error ? err.message : 'Erreur de chargement')
