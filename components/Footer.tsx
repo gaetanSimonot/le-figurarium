@@ -14,6 +14,7 @@ export default function Footer() {
             </div>
             <div>
               <h3 className="text-xl font-display font-bold text-white">Le Figurarium</h3>
+              <p className="text-xs text-primary-400 font-medium">Le cadeau créatif</p>
             </div>
           </div>
 

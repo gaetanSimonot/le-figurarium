@@ -21,7 +21,7 @@ export default function Header() {
               <div className="text-2xl font-display font-bold text-white group-hover:text-primary-400 transition-colors">
                 Le Figurarium
               </div>
-              <div className="text-xs text-primary-400 font-medium">Premium STL Files</div>
+              <div className="text-xs text-primary-400 font-medium">Le cadeau créatif</div>
             </div>
           </Link>
 

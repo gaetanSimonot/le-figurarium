@@ -10,6 +10,8 @@ interface GumroadProduct {
   preview_url?: string
   formatted_price: string
   short_url: string
+  tags?: string[]
+  category?: 'full-size' | 'chibi' | 'other' // Catégorie détectée
 }
 
 export function useGumroadProducts() {
@@ -30,7 +32,37 @@ export function useGumroadProducts() {
 
         const data = await response.json()
         console.log('[useGumroadProducts] Products loaded:', data.length)
-        setProducts(data)
+
+        // Debug: extraire tous les tags uniques
+        const allTags = new Set<string>()
+        data.forEach((product: GumroadProduct) => {
+          product.tags?.forEach(tag => allTags.add(tag))
+        })
+        console.log('[useGumroadProducts] Tags uniques trouvés:', Array.from(allTags).sort())
+
+        // Détecter les catégories (Full Size, Chibi) depuis le nom/description
+        const productsWithCategory = data.map((product: GumroadProduct) => {
+          const nameAndDesc = `${product.name} ${product.description}`.toLowerCase()
+
+          let category: 'full-size' | 'chibi' | 'other' = 'other'
+
+          if (nameAndDesc.includes('chibi')) {
+            category = 'chibi'
+          } else if (nameAndDesc.includes('full size') || nameAndDesc.includes('fullsize')) {
+            category = 'full-size'
+          }
+
+          return { ...product, category }
+        })
+
+        // Debug: compter les produits par catégorie
+        const categoryCounts = productsWithCategory.reduce((acc, p) => {
+          acc[p.category] = (acc[p.category] || 0) + 1
+          return acc
+        }, {} as Record<string, number>)
+        console.log('[useGumroadProducts] Produits par catégorie:', categoryCounts)
+
+        setProducts(productsWithCategory)
       } catch (err) {
         console.error('[useGumroadProducts] Erreur:', err)
         setError(err instanceof Error ? err.message : 'Erreur de chargement')

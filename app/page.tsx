@@ -75,79 +75,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Produits Phares Section */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark-900 mb-4">
-            Ton parcours créatif commence ici
-          </h2>
-          <p className="text-xl text-dark-600 max-w-2xl mx-auto">
-            Trois chemins pour transformer ton imaginaire en réalité
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Pack Débutant */}
-          <Link
-            href="/pack-debutant"
-            className="group bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-          >
-            <div className="text-5xl mb-4">🧩</div>
-            <h3 className="text-2xl font-display font-bold text-dark-900 mb-4 group-hover:text-primary-600 transition-colors">
-              Pack Débutant
-            </h3>
-            <p className="text-dark-600 mb-6 leading-relaxed">
-              Tout pour te lancer : imprimante, résine, formation et accompagnement.
-            </p>
-            <div className="flex items-center gap-2 text-primary-600 font-bold group-hover:gap-3 transition-all">
-              Découvrir
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </div>
-          </Link>
-
-          {/* Collections */}
-          <Link
-            href="/packs"
-            className="group bg-gradient-to-br from-accent-50 to-accent-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-          >
-            <div className="text-5xl mb-4">📦</div>
-            <h3 className="text-2xl font-display font-bold text-dark-900 mb-4 group-hover:text-accent-600 transition-colors">
-              Collections Créatives
-            </h3>
-            <p className="text-dark-600 mb-6 leading-relaxed">
-              Choisis un univers : Chibi, Halloween, Fantasy…
-            </p>
-            <div className="flex items-center gap-2 text-accent-600 font-bold group-hover:gap-3 transition-all">
-              Explorer
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </div>
-          </Link>
-
-          {/* Galerie */}
-          <Link
-            href="/galerie"
-            className="group bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-          >
-            <div className="text-5xl mb-4">🎨</div>
-            <h3 className="text-2xl font-display font-bold text-dark-900 mb-4 group-hover:text-primary-600 transition-colors">
-              Galerie Alkemia
-            </h3>
-            <p className="text-dark-600 mb-6 leading-relaxed">
-              Découvre plus de {figurinesData.figurines.length} figurines prêtes à imprimer.
-            </p>
-            <div className="flex items-center gap-2 text-primary-600 font-bold group-hover:gap-3 transition-all">
-              Découvrir
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </div>
-          </Link>
-        </div>
-      </section>
 
       {/* Pack Débutant Section - STAR PRODUCT */}
       {packDebutant && (
@@ -248,14 +175,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Packs Thématiques Section */}
+      {/* Collections Thématiques Section */}
       <section className="max-w-7xl mx-auto px-6 lg:px-8 py-20">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-display font-bold text-dark-900 mb-4">
-            Packs Thématiques
+            Collections Thématiques
           </h2>
           <p className="text-xl text-dark-600 max-w-2xl mx-auto">
-            Collections saisonnières et thématiques exclusives
+            Des collections exclusives pour enrichir ta bibliothèque
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
