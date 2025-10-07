@@ -56,7 +56,7 @@ export function useGumroadProducts() {
         })
 
         // Debug: compter les produits par catégorie
-        const categoryCounts = productsWithCategory.reduce((acc, p) => {
+        const categoryCounts = productsWithCategory.reduce((acc: Record<string, number>, p) => {
           acc[p.category] = (acc[p.category] || 0) + 1
           return acc
         }, {} as Record<string, number>)
